@@ -1,0 +1,84 @@
+$container-background: rgb(221, 220, 220);
+
+.container {
+  background: $container-background;
+  border-radius: 3rem;
+  box-shadow: 0 1.3em 1.3em 0.3em rgba(128, 128, 128, 0.753);
+  box-sizing: border-box;
+  padding: 3rem;
+  width: 40rem;
+
+  h1 {
+    font-weight: 500;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  form {
+    label {
+      display: block;
+      height: 4rem;
+      margin-bottom: 8%;
+      input {
+        border: none;
+        border-radius: 0.5rem;
+        height: 100%;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        text-indent: 3%;
+        width: 100%;
+        transition: 0.3s ease;
+        &:focus {
+          background: rgba(251, 246, 246, 0.87);
+          outline: none;
+          transition: 0.3s ease;
+        }
+      }
+    }
+
+    select {
+      height: 2.5rem;
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 8%;
+      text-indent: 5%;
+      width: 30%;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      height: 4em;
+      letter-spacing: 0.1rem;
+      position: relative;
+      width: 40%;
+      &:hover {
+        outline: 0.1rem solid gray;
+      }
+    }
+  }
+
+  .result-container {
+    align-items: flex-end;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 1.3rem;
+    padding-top: 15%;
+    h3 {
+      box-sizing: border-box;
+      display: inline-block;
+      font-weight: normal;
+      margin: 0;
+      padding-right: 5%;
+      width: 25%;
+    }
+    input {
+      border-radius: 0.2rem;
+      height: 2rem;
+      justify-self: flex-end;
+      text-indent: 3%;
+      width: 75%;
+    }
+  }
+}

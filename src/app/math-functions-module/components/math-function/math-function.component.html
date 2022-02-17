@@ -1,0 +1,20 @@
+<div class="container">
+    <h1><ng-content></ng-content></h1>
+    <form [formGroup]="formGroup" (submit)="calculate()">
+        <label>
+            <input type="number" formControlName="number" placeholder="Enter number here..." />
+        </label>
+        <label *ngIf="mathFunction==='mathPow'">
+            <input type="number" formControlName="degree" placeholder="Enter degree here..." /> 
+        </label>
+        <select *ngIf="isSelectVisible" formControlName="method">
+            <option>Iterations</option>
+            <option>Recursive</option>
+        </select>
+        <button>Calculate</button>
+    </form>
+    <section class="result-container">
+        <h3>Result:</h3>
+        <input type="text" readonly [value]="result" />
+    </section>
+</div>

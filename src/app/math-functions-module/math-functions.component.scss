@@ -1,0 +1,11 @@
+.container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 3rem;
+  padding: 2% 0;
+  app-math-function {
+    padding: 2% 0;
+    justify-self: center;
+  }
+}
